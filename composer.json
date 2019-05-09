@@ -1,0 +1,43 @@
+{
+    "license": "MIT",
+    "name": "freeeed/zabbix",
+    "description": "PHP version of the Zabbix API",
+    "type": "library",
+    "keywords": [
+        "http",
+        "rest",
+        "api",
+        "curl",
+        "client",
+        "HTTP client",
+        "Zabbix"
+    ],
+    "authors": [
+        {
+            "name": "Friedrich Ueberreiter",
+            "email": "friedrich@ueberreiter.com",
+            "homepage": "http://ueberreiter.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "ext-curl": "*",
+        "phpunit/phpunit": "^7.0",
+        "psr/log": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZabbixApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ZabbixApi\\Tests\\": "tests/"
+        }
+    }
+}
